@@ -1,0 +1,108 @@
+// ..............Custom JavaScript Code.................
+$("#leftside-navigation .sub-menu > a").click(function(e) {
+    $("#leftside-navigation ul ul").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
+    e.stopPropagation()
+  });
+
+  // owl carousel start======================
+ $('.features-carousel').owlCarousel({
+  dots: true,
+  // slidesToShow:7,
+  // slidesToScroll:8,
+  autoplay: true,
+  speed: 300,
+  autoplaySpeed: 1000,
+  responsive:{
+      0:{
+          items:2,
+          
+      },
+      500:{
+          items:2,
+          
+      },
+      768:{
+          items:4,
+          
+      },
+      992:{
+          items:5,
+         
+      },
+      1200:{
+          items:7,
+         
+      }
+  }
+});
+  // owl carousel start======================
+ $('.features-carousel2').owlCarousel({
+  dots: true,
+  // slidesToShow:7,
+  // slidesToScroll:8,
+  autoplay: true,
+  speed: 100,
+  autoplaySpeed: 1000,
+  responsive:{
+      0:{
+          items:2,
+          
+      },
+      500:{
+          items:2,
+          
+      },
+      768:{
+          items:4,
+          
+      },
+      992:{
+          items:5,
+         
+      },
+      1200:{
+          items:6,
+         
+      }
+  }
+});
+
+
+/*========== Loading  ==========*/
+$('.preloader').delay(200).fadeOut(700, function () {
+  $(this).remove();
+});
+
+
+
+
+//Scroll back to top==============
+var progressPath = document.querySelector('.progress-wrap path');
+var pathLength = progressPath.getTotalLength();
+progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+progressPath.style.strokeDashoffset = pathLength;
+progressPath.getBoundingClientRect();
+progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';		
+var updateProgress = function () {
+    var scroll = $(window).scrollTop();
+    var height = $(document).height() - $(window).height();
+    var progress = pathLength - (scroll * pathLength / height);
+    progressPath.style.strokeDashoffset = progress;
+}
+updateProgress();
+$(window).scroll(updateProgress);	
+var offset = 50;
+var duration = 550;
+jQuery(window).on('scroll', function() {
+    if (jQuery(this).scrollTop() > offset) {
+        jQuery('.progress-wrap').addClass('active-progress');
+    } else {
+        jQuery('.progress-wrap').removeClass('active-progress');
+    }
+});				
+jQuery('.progress-wrap').on('click', function(event) {
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+    return false;
+})

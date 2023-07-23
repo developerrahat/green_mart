@@ -1,0 +1,928 @@
+/* Default Font Css Start */
+@font-face {
+    font-family:"Mukta-Light";
+    src: url(../fonts/Mukta-Light.ttf);
+}
+@font-face {
+    font-family:"Mukta-Regular";
+    src: url(../fonts/Mukta-Regular.ttf);
+}
+
+/* Default Font Css  End */
+
+
+
+/* ----------------Default Css Start--------------- */
+/* --------------------------------------
+   2. Loading
+-----------------------------------------*/
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: 9999999999999999999999;
+}
+.preloader .loading-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.preloader .loading-inner img{
+    width: 170px;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family:"Mukta-Light" !important;  
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+body, h1, h2, h3, h4, h5, span, a {
+    font-family:"Mukta-Regular" !important;
+    margin-bottom: 0 !important;
+}
+/*---------------- Default Css End --------------------*/
+
+/*------------------ Main Header Css Start------------------ */
+.main_header{
+    background: #2c6e49;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+}
+.logo{
+    color: white !important;
+}
+.logo span{
+    color: #ffb700;
+}
+.header_search_form{
+	height: 42px;
+	width: 260px;
+}
+
+.primari-menu li a{
+    padding: 10px 5px !important;
+    color: white;
+    text-transform: uppercase;
+    font-weight:600;
+    font-size: 14px;
+}
+.primari-menu li a:hover{
+   background: rgba(255, 255, 255, .2);
+   color: white;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+	position: absolute;
+	left: -124px;
+    top:50px;
+}
+.login{
+    margin: 10px 0;
+    color: black !important; 
+    text-transform: capitalize !important;
+    font-size: 16px !important;
+}
+.login:hover{
+   background: rgba(228, 228, 228, .3) !important;
+}
+
+#ckeck{
+    display: none;
+}
+label #sidebar_btn {
+    width:45px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right:20px;
+    margin-left: 20px;
+    cursor: pointer;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+}
+#ckeck:checked ~ .sidebar{
+  margin-left: -250px; 
+}
+#ckeck:checked ~ .main-content-area{
+    margin-left:0px !important;
+    padding-right: 0 !important;
+}
+
+.my_toggler:focus{
+    box-shadow: none;
+}
+.my_toggler span{
+    color: #fff;
+}
+/* ====================Sidebar================ */
+.sidebar{
+  width: 250px;
+  height: 100%;
+  background: #fff !important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  z-index:9999;
+  margin-top:71px;
+  border-right: 1px solid #ddd;
+  position: fixed;
+  overflow: scroll;
+}
+
+.sub-menu a span{
+    margin-left: 15px !important;
+    color:#606060 !important;
+    font-weight:600;
+}
+.nano-content li a{
+    padding: 10px 30px;
+    display:block;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+.nano-content li:hover > a{
+    background: #ddd;
+}
+.nano-content li a i{
+    color: #2c6e49;
+}
+.down_arrow{
+    margin-top:8px;
+    font-size: 10px;
+    color:#646464 !important;
+    float: right;
+}
+.nano-content li ul li a{
+    color: #606060 !important;
+    font-weight:600;
+}
+
+/* ==============Main content Area Start============== */
+.main-content-area{
+    margin-top:70px;
+    padding-right: 250px !important;
+    margin-left:250px ;
+    height:100vh;
+    transition:.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* ============++++++++++=========== */
+.item {
+    margin-top: 30px;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+
+
+
+/* ------------------SLIDER CSS START------------------ */
+.ecommerce-slider{
+   padding-top: 20px;
+}
+.carousel-item {
+    padding: 350px 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    background-position: center;
+    border-radius:4px;
+  }
+.carousel-control-prev, .carousel-control-next {
+	width: 4%;
+}
+.carousel-indicators [data-bs-target] {
+	height: 5px;
+	background-color: #b400d8;
+
+}
+/* ------------------SLIDER CSS END------------------ */
+.news{
+    color: #b400d8;
+    border-bottom: 1px solid #ddd;
+}
+/* Discount  Offer Css Start */
+.discount_offers{
+    padding: 50px 0;
+}
+.discount_wrapperm{
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.discount_wrapperm img{
+    width: 100%;
+    transition: .4s ease-in-out;
+}
+.discount_wrapperm img:hover{
+    transform: scale(1.2);
+}
+.discount_content{
+    position: absolute;
+    left: 10%;
+    top: 16%;
+}
+.discount_content h4{
+    font-size: 18px;
+    color: #ffb700;
+}
+.discount_content h1{
+    font-size: 26px;
+    font-weight: 600;
+}
+.discount_content h5{
+    font-size: 15px;
+    color: #646464;
+}
+.shop_btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 15px;
+    background: rgb(44, 110, 73);
+    transition: all 0.4s ease-in-out 0s;
+    font-weight: 600;
+    color: rgb(255, 255, 255) !important;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.shop_btn:hover{
+    background: #ffb700 !important;
+    box-shadow: 2px 4px 6px -2px rgb(128, 128, 128);
+}
+.discount_offer{
+    display: inline-block;
+    position: absolute;
+    top: 6%;
+    right: 4%;
+    background: #ffb700;
+    color: #fff;
+    padding: 6px 14px;
+    margin-bottom: 0 !important;
+    text-align: center;
+}
+.discount_offer h4{
+    font-size: 16px;
+    margin-bottom: 0 !important;
+}
+/* ===============Discount  Offer Css Start================== */
+
+/* ---------------TOP CATEGORY PRODUCT CSS START-------------- */
+.top-product-category{
+    padding-bottom: 50px;
+}
+
+.title-heading h1{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.title-heading p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #606060;
+}
+.product-item-wrapper{
+    text-align: center;
+}
+.product-img {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+    border-radius: 4px !important;
+    box-shadow:0 0 1px 1px rgba(126, 126, 126, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+	transition: .5s ease-in-out;
+}
+.product-img:hover{
+    box-shadow:0 0 6px 1px rgba(0, 0, 0, 0.1);
+ 
+}
+.product-img img{
+    width: 110px !important;
+    text-align: center;
+    margin: auto;
+    transition: .4s ease-in-out;
+}
+.product-img h5{
+    color: #797877;
+    font-size: 14px !important;
+    font-weight: 400;
+}
+.product-img:hover img{
+    transform: scale(1.2);
+}
+.product-text {
+    margin-top: -10px;
+}
+.product-text h4 {
+    color: #1a1a1a;
+    font-size: 16px;
+}
+.product-grid{
+    column-count:5;
+    column-gap:25px;
+}
+
+.owl-carousel .owl-dots {
+    margin-top: 6px !important;
+    padding: 0 15px;
+    display: block !important;
+    text-align: center;
+}
+.owl-carousel button.owl-dot {
+    width: 25px;
+    height: 3px;
+    background: #ddd;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 30px;
+}
+.owl-carousel button.owl-dot.active{
+background-color:#ffb700;
+}
+.features_lists ul li a{
+    color: #1a1a1a;
+}
+.features_lists ul li a:hover{
+    color: #ffb700;
+}
+
+
+/* -------------TOP CATEGORY PRODUCT CSS END-------------- */
+
+/* ============== Add Banner Style Css ==============*/
+.add_banner{
+    padding: 60px 0;
+    background: url(../imgs/banner/14.png) no-repeat center;
+    background-size: cover;
+}
+.add_banner h4{
+    color: #070021;
+    font-size: 18px;
+}
+.add_banner{
+    padding: 60px 0;
+    background: url(../imgs/banner/14.png) no-repeat center;
+    background-size: cover;
+}
+/* ================ Add Banner Style Css============= */
+
+
+/* ================ Counter Timmer Css ==============*/
+.counter_timmer{
+    padding: 40px 0;
+}
+.counter_timmer_content h2{
+    font-size: 18px;
+}
+.counter_timmer_content h2 a{
+    font-size: 36px;
+    color: #ffb700;
+}
+/*  Counter Timmer Css */
+
+
+/* Product Card Design Css Start */
+.product_card_design{
+    padding: 50px 0;
+}
+.products_wrapper{
+    padding: 20px 15px;
+    box-shadow: 0 0 1px 1px rgba(133, 133, 133, 0.1);
+    transition: .4s ease-in-out;
+    position: relative;
+    border-radius: 4px;
+}
+.products_wrapper:hover{
+    padding: 20px 15px;
+    box-shadow: 0 6px 4px 1px rgba(133, 133, 133, 0.2);
+}
+.p_image {
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+.owl-carousel .owl-item .p_image img {
+    width: 120px;
+    height: 120px;
+}
+.owl-carousel .owl-stage-outer {
+	margin-left: 15px;
+}
+.p_image img {
+    transition: .4s ease-in-out;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+.products_wrapper:hover .p_image img{
+    transform: scale(1.2);
+}
+.p_content p{
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #070021;
+    font-weight: 500;
+}
+.p_content p:hover{
+    color: #2c6e49;
+}
+.p_content span{
+    font-size: 12px;
+    color: #ffb700;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.user-rate ul li{
+    margin-right: 2px;
+
+}
+.user-rate ul li a{
+    font-size: 12px;
+    color: #ffb700;
+}
+.user-rate_number a{
+    margin-left: 15px;
+    font-size: 12px;
+    color: #606060;
+    font-weight: 500;
+}
+.p_price h1{
+    font-size: 15px;
+}
+.p_price h1 span{
+    color: #b400d8;
+    font-size: 18px;
+}
+.p_add_card{
+    display: inline-block;
+    width: 100%;
+    padding: 6px 0;
+    background: #2c6e49;
+    text-align: center;
+    color: #fff !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 10px;
+    border-radius: 30px;
+    z-index: 1;
+    display: none;
+    transition: 1s ease-in-out;
+    margin-top: 30px;
+    position: relative;
+
+}
+.products_wrapper:hover .p_add_card{
+    display: block ;
+}
+.p_add_card::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background: #b400d8;
+    border-radius: 30px;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s ease-in-out;
+}
+.p_add_card:hover::after{
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+}
+.quick_view, .wish_list{
+    margin: 4px 0;
+    position: absolute;
+    right: -8%;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1);
+    background: #ffffff;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s ease-in-out;
+    z-index: 999;
+}
+.wish_list{
+    top: 12%;
+    transition: .8s ease-in-out !important;
+}
+.products_wrapper:hover .quick_view, .products_wrapper:hover .wish_list{
+    visibility: visible;
+    opacity: 1;
+    right: 0;
+}
+.card_disc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 12px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1);
+    background: #2c6e49;
+    color: #fff;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.top-product-category2{
+    padding: 50px 0;
+}
+.features_btn a{
+    display: inline-block;
+    background: #e6e6e6;
+    padding: 3px 15px;
+    color: #070021;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+/*================= Product Card Design Css End =================*/
+
+.discount_offers{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+/*============= Notice Css =================*/
+.notice{
+    padding: 40px 0;
+}
+.notice_wrapper{
+    padding: 20px 0;
+    background: #f4bdff;
+    text-align: center;
+    border-radius: 4px;
+}
+.notice h3{
+    font-size: 18px;
+    margin-bottom: 0;
+    letter-spacing: 4px;
+    color: #ff009d;
+}
+/* ==============Notice Css =================*/
+
+/*================ Blog Css Start =================*/
+.our_blogs{
+    padding: 50px 0;
+}
+.blog_content{
+    padding: 15px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
+
+}
+.blog_content img{
+    width: 100%;
+}
+.blog_content h4{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #606060;
+}
+.blog_content h1{
+    font-size: 20px;
+    color: #070021;
+}
+.blog_content h1:hover{
+    color: #2c6e49;
+}
+.blog_date{
+
+}
+.dateb a, .comnt a, .byAuthor a{
+    color: #070021;
+    font-size: 14px;
+}
+
+.blog_date{}
+/* ===================Blog Css End ==============*/
+
+
+/*================= Newslatter Css Start ==================*/
+.newslatter_sec{
+    padding: 80px 0 0 0;
+    background: url(../imgs/banner-10-min.png) no-repeat center;
+    background-size: cover;
+}
+.newslatter_content h2{
+    font-size: 28px;
+}
+.newslatter_content h4{
+    color: #797877;
+}
+.newslatter_img img{
+    width: 100%;
+}
+
+.subs_wrapper{
+    position: relative;
+}
+.subs_wrapper .subs_input{
+    margin-top: 40px;
+    border: none;
+    height: 50px;
+    border-radius:30px;
+    width: 400px;
+
+}
+.subs_wrapper .subs_input:focus{
+   box-shadow: none;
+
+}
+
+.subs_btn {
+    width: 150px;
+    height: 50px;
+    background: #ff009d;
+    color: #fff !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+.subs_btn:focus{
+   box-shadow: none;
+}
+.subs_btn_wp{
+    position: absolute;
+    right: 30%;
+    top: 0;
+
+}
+/* =================Newslatter Css Start================= */
+
+/* ===============Footer Area Css Start =====================*/
+.footer_area{}
+.footer_top{
+    padding: 40px 0;
+    background: #2c6e49;
+}
+.footer_widget{}
+.footer_widget h4{
+    margin-bottom: 20px;
+    font-size:16px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.footer_menu ul li a{
+    color: #fff;
+    font-size: 14px;
+}
+.footer_menu ul li a:hover{
+    color: #ffb700;
+}
+.footer_menu ul li a span{
+    margin-right: 6px;
+    color: #ffb700;
+}
+
+.footer_bottom{
+    padding: 16px 0;
+    background: #0eae53;
+}
+.copyright p{
+    margin-bottom: 0;
+    color: #ffffff;
+}
+.copyright p a{
+    color: #ff9100;
+}
+.payment_gatway img{
+    width: 100%;
+}
+/*================== Footer Area Css End ================*/
+
+
+
+
+/*---------------POPUP MODAL CSS START-------------- */
+.register{
+    padding: 3%;
+}
+.register-left{
+    text-align: center;
+    color: #fff;
+}
+.register-left input {
+	border: none;
+	border-radius: 1.5rem;
+	padding: 2%;
+	width: 60%;
+	background: #f8f9fa;
+	font-weight: bold;
+	color: #383d41;
+	margin-top: 0%;
+	margin-bottom: 10%;
+	cursor: pointer;
+}
+.register-right{
+    margin-top: 40px;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+    padding: 0 40px;
+}
+.register-left img {
+	width:40%;
+}
+
+.register-left p {
+	font-weight: lighter;
+	padding: 0%;
+	margin-top: 0%;
+}
+.btnRegister{
+    width: 100%;
+    margin-top: 10%;
+    border: none;
+    border-radius:4px;
+    padding: 2%;
+    background: #ff009d;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.nav-tabs {
+	border-bottom: 0;
+}
+
+.register .nav-tabs .nav-link {
+    margin: 20px 0;
+	padding:7px 40px;
+	color: #1a1a1a;
+    font-size: 17px;
+    text-transform: uppercase;
+    border: none;
+    background: #fff;
+    border-radius:4px;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    color: #fff;
+    background: #ff009d;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
+}
+.fname, .rnumber, .remail, .password{
+    margin-bottom: 14px;
+    height: 40px;
+}
+.form-control:focus{
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #ff009d;
+}
+.form-control::placeholder{
+    font-size: 14px;
+    color: #aaa8a8;
+}
+.register-privacy{
+    margin-top:9px;
+    text-align: center;
+}
+.register-privacy p{
+    font-size: 12px;
+    color: #606060;
+}
+.register-privacy p a{
+    font-size: 12px;
+}
+
+
+/* ====================#Top to button Progress========================== */
+.progress-wrap {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50px;
+    box-shadow: inset  0 0 0 2px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.progress-wrap.active-progress {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+.progress-wrap::after {
+	position: absolute;
+	font-family: 'Font Awesome 5 Free';
+	content: '\f062';
+    font-weight: 600;
+	text-align: center;
+	line-height: 46px;
+	font-size: 18px;
+	color:#ff5e00;
+	left: 0;
+	top: 0;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	z-index: 1;
+	-webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.progress-wrap:hover::after {
+	opacity: 0;
+}
+.progress-wrap::before {
+	position: absolute;
+	font-family: 'Font Awesome 5 Free';
+	content: '\f062';
+    font-weight: 600;
+	text-align: center;
+	line-height: 46px;
+	font-size:18px;
+	opacity: 0;
+	background-image: linear-gradient(298deg, #fc4e1c, #000000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	left: 0;
+	top: 0;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	z-index: 2;
+	-webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.progress-wrap:hover::before {
+	opacity: 1;
+}
+.progress-wrap svg path { 
+	fill: none; 
+}
+.progress-wrap svg.progress-circle path {
+	stroke:rgb(0, 4, 255);
+	stroke-width: 4;
+	box-sizing:border-box;
+	-webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.progress-wrap {
+	box-shadow: inset  0 0 0 2px #fc4e1c;
+}
+.progress-wrap::after {
+	color:#212529;
+}
+.progress-wrap svg.progress-circle path {
+	stroke:#d2d1d1;
+}

@@ -1,0 +1,216 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .product-img {
+        margin-right: 13px;
+    }
+    .main-content-area {
+        margin-left: 250px;
+        padding-right: 30px !important;
+
+    }
+    .main-content-area {
+        margin-left: 215px;
+
+    }
+    .header_search_form {
+        width: 100%;
+    }
+    .navbar-nav.ms-auto.mb-2.mb-lg-0.primari-menu {
+        padding-left: 15px;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        left: 0px;
+    }
+    label #sidebar_btn {
+        margin-left: 0px;
+
+    }
+    .my_toggler{
+        padding-right: 0;
+    }
+    .logo h2 {
+        font-size: 32px;
+    }
+    .sidebar {
+        margin-top: 65px;
+    }
+    .carousel-item {
+        padding: 180px 0;
+    }
+    .counter-timmer {
+        margin-top: 30px;
+    }
+    ul#countdown li {
+        width: 71px;
+
+    }
+    .discount_wrapperm img {
+        height: 200px;
+        margin-top: 10px;
+    }
+    .dateb a, .comnt a, .byAuthor a {
+        font-size: 10px;
+    }
+    .subs_wrapper .subs_input {
+        width: 306px;
+    }
+    .subs_btn_wp {
+        right: 0%;
+
+    }
+    .newslatter_content h2 {
+        font-size: 24px;
+    }
+    .owl-carousel .owl-stage-outer {
+        margin-left:-5px !important;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .main-content-area {
+        margin-left: 250px;
+        padding-right: 30px !important;
+
+    }
+    .main-content-area {
+        margin-left: 215px;
+
+    }
+    .header_search_form {
+        width: 100%;
+    }
+    .navbar-nav.ms-auto.mb-2.mb-lg-0.primari-menu {
+        padding-left: 15px;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        left: 0px;
+    }
+    .counter-timmer {
+        margin-top: 30px;
+    }
+    .carousel-item {
+        padding: 170px 0;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .main-content-area {
+        margin-left: 250px;
+        padding-right: 30px !important;
+    }
+    .sidebar {
+        margin-top: 62px;
+    }
+    .main-content-area {
+        margin-left: 215px;
+
+    }
+    .header_search_form {
+        width: 100%;
+    }
+    .navbar-nav.ms-auto.mb-2.mb-lg-0.primari-menu {
+        padding-left: 15px;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        left: 0px;
+    }
+    .counter-timmer {
+        margin-top: 30px;
+    }
+    .carousel-item {
+        padding: 180px 0;
+    }
+ }
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .sidebar {
+        margin-top: 62px;
+    }
+    /* Timmer Media Css */
+    ul#countdown li {
+        width: 65px;
+    }
+    /* Timmer Media Css */
+    .subs_btn_wp {
+        right: 25%;
+    }
+    .main-content-area {
+        margin-left: 250px;
+        padding-right: 30px !important;
+
+    }
+    .main-content-area {
+        margin-left: 215px;
+
+    }
+    .header_search_form {
+        width: 345px;
+    }
+    .dateb a, .comnt a, .byAuthor a {
+        font-size: 10px;
+    }
+
+
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    .sidebar {
+        margin-top: 62px;
+    }
+/* ===========Main Header Media Css Start */
+.header_search_form{
+    width:420px !important;
+}
+.primari-menu li a{
+    padding:10px !important;
+}
+.sidebar {
+	width: 235px;
+}
+.main-content-area {
+	padding-right: 235px !important;
+	margin-left: 235px;
+
+}
+/* ===========Main Header Media Css end */
+
+.discount_content {
+	top: 7%;
+}
+.discount_content h1 {
+	font-size: 22px;
+}
+.dateb a, .comnt a, .byAuthor a {
+	font-size: 10px;
+}
+.subs_btn_wp {
+	right: 26%;
+}
+
+
+
+
+}
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .sidebar {
+        margin-top: 62px;
+    }
+/* ===========Main Header Media Css Start */
+.header_search_form{
+    width:580px !important;
+}
+.primari-menu li a{
+    padding:10px !important;
+}
+/* ===========Main Header Media Css end */
+
+ }
